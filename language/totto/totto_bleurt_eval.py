@@ -37,6 +37,8 @@ flags.DEFINE_string(
 flags.DEFINE_string("generation_path", None,
                     "Text file containing generations, one per line.")
 
+# BLEURT 스코어 Key Error 해결용
+flags.DEFINE_string("bleurt_checkpoint", None, "")
 
 def _text_reader(text_file):
   """Returns list of lines from the text file.
